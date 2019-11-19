@@ -1,0 +1,11 @@
+# Do not send the configuration file
+config.cfg
+
+# Ignore the python cache
+__pycache__
+
+# Ignore python compiled files¿?
+*.pyc
+
+# Ignore files being edited
+*.swp*
