@@ -1,3 +1,4 @@
 paho-mqtt
 tb-mqtt-client
 mraa
+RPi.GPIO
