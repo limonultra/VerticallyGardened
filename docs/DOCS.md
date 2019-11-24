@@ -3,7 +3,7 @@
 https://es.rs-online.com/web/p/sensores-de-humedad-y-temperatura/1826530/  
 ## Luz ambiental: VEML7700-TT
 https://es.rs-online.com/web/p/sensores-de-luz-y-de-color/1226791/
-## Calidad del aire: IAQ-Core P
+## Calidad del aire: iAQ-Core P
 https://es.rs-online.com/web/p/sensores-calidad-aire/1024163/
 
 
