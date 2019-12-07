@@ -2,7 +2,6 @@
 El sistema depende de tener Ubilinux como sistema operativo en la placa  
 Up Squared, puesto que viene con muchas comodidades que utilizaremos,  
 como su propio port de la librería RPi.GPIO para Raspberry Pi o las  
-herramientas mraa de Int o las  
 herramientas mraa de Intel..
   
   
