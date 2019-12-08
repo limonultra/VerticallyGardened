@@ -132,16 +132,17 @@ def main():
     print "Serial number:", sn()
     print "Leemos:"
     
-    # Set periodic read with mps=1 adnd high repeatability
-    setPeriodic()
+    try:
+        # Set periodic read with mps=1 adnd high repeatability
+        setPeriodic()
 
-    while True:
-        temp, hum = readData()
-        print "Temperature:", temp
-        print "Humidity:   ", hum
+        while True:
+            temp, hum = readData()
+            print "Temperature:", temp
+            print "Humidity:   ", hum
 
-        time.sleep(1.5)
-        
+            time.sleep(1.5)
+            
     except KeyboardInterrupt:
         print "Killing..."
         stop()
