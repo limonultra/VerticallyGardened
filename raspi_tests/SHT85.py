@@ -142,7 +142,7 @@ def main():
 
         time.sleep(1.5)
         
-    except KeyboardInterrup:
+    except KeyboardInterrupt:
         print "Killing..."
         stop()
 
