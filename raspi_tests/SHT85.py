@@ -62,25 +62,6 @@ SHT_SN_LSB  = 0x82
 # Read:
 SHT_RD      = 0x00
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Power Saving Command Code
-
-# Read Command Codes
-
-
-
 def readData():
     # Expect 6 bytes: 2 Temp + 1 ACK + 2 Hum + 1 ACK = 6 bytes
     data = bus.read_i2c_block_data(addr, SHT_RD, 6)
@@ -150,17 +131,16 @@ def sn():
 def main():
     print "Serial number:", sn()
     print "Leemos:"
-    temp, hum = singleShotRead()
-    print "Temperatura:", temp
-    print "Humidity   :", hum
-
-
-    return
-
-
     
+    # Set periodic read with mps=1 adnd high repeatability
+    setPeriodic()
 
+    while True:
+        temp, hum = readData()
+        print "Temperature:", temp
+        print "Humidity:   ", hum
 
+        time.sleep(1.5)
 
 
 if __name__ == '__main__':
