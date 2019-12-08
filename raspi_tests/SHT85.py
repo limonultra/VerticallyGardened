@@ -141,6 +141,11 @@ def main():
         print "Humidity:   ", hum
 
         time.sleep(1.5)
+        
+    except (KeyboardInterrup):
+        print "Killing..."
+        stop()
+
 
 
 if __name__ == '__main__':
