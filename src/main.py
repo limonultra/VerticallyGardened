@@ -1,6 +1,7 @@
 
 import paho.mqtt.client as mqtt
 import utils
+import RPI.GPIO
 
 # No
 client = mqtt.Client()
